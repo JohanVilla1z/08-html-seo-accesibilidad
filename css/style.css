@@ -1,4 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: "PP Neue Montreal Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("PP Neue Montreal Book"),
+    url("./assets/fonts/ppneuemontreal-book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("PP Neue Montreal Italic"),
+    url("./assets/fonts/ppneuemontreal-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: local("PP Neue Montreal Thin"),
+    url("./assets/fonts/ppneuemontreal-thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("PP Neue Montreal Medium"),
+    url("./assets/fonts/ppneuemontreal-medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal SemiBold italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("PP Neue Montreal SemiBold italic"),
+    url("./assets/fonts/ppneuemontreal-semibolditalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("PP Neue Montreal Bold"),
+    url("./assets/fonts/ppneuemontreal-bold.woff") format("woff");
+}
 
 * {
   margin: 0;
@@ -7,7 +53,7 @@
 }
 
 html {
-  font-family: "Poppins", serif;
+  font-family: "PP Neue Montreal", system-ui, sans-serif;
 }
 
 .header {
@@ -33,7 +79,8 @@ html {
   font-weight: 600;
 }
 
-.menu__item, .menu__icon {
+.menu__item,
+.menu__icon {
   display: flex;
   align-items: center;
   gap: 3px;
@@ -65,7 +112,7 @@ html {
 }
 
 .header__button {
-  color: #FFF;
+  color: #fff;
   background-color: #000;
   padding: 10px;
   border-radius: 5px;
@@ -77,7 +124,21 @@ html {
 
 .hero {
   background-color: hsla(132, 0%, 100%, 1);
-  background-image: radial-gradient(circle at 91% 11%, hsla(13, 100%, 88%, 0) 4.038772213247173%, transparent 37.2265767974114%), radial-gradient(circle at 23% 50%, hsla(323, 100%, 88%, 0.76) 19.04202876606054%, transparent 63.33640956108327%), radial-gradient(circle at 73% 35%, hsla(267.9999999999999, 100%, 88%, 0.8) 21.05892295704486%, transparent 63.33640956108327%);
+  background-image: radial-gradient(
+      circle at 91% 11%,
+      hsla(13, 100%, 88%, 0) 4.038772213247173%,
+      transparent 37.2265767974114%
+    ),
+    radial-gradient(
+      circle at 23% 50%,
+      hsla(323, 100%, 88%, 0.76) 19.04202876606054%,
+      transparent 63.33640956108327%
+    ),
+    radial-gradient(
+      circle at 73% 35%,
+      hsla(267.9999999999999, 100%, 88%, 0.8) 21.05892295704486%,
+      transparent 63.33640956108327%
+    );
   background-blend-mode: normal, normal, normal;
   padding: 180px;
 }
@@ -119,7 +180,7 @@ html {
 .hero__button span {
   background-color: #000;
   border-radius: 5px;
-  color: #FFF;
+  color: #fff;
   display: block;
   padding: 10px;
   position: relative;
@@ -127,7 +188,7 @@ html {
 }
 
 .hero__button::after {
-  content: '';
+  content: "";
   width: 1000px;
   height: 1000px;
   position: absolute;
@@ -156,7 +217,7 @@ html {
 .banner {
   display: flex;
   border-radius: 10px;
-  background-color: #FFF;
+  background-color: #fff;
   width: 792px;
   margin: 70px auto;
   text-decoration: none;
@@ -203,5 +264,4 @@ html {
   border-radius: 10px;
   background-color: #e4d7d7;
   padding: 20px;
-
 }
